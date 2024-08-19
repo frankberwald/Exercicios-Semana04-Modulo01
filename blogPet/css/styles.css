@@ -15,7 +15,18 @@ a{
   border: 1px solid #ccc;
   background-color: #ccc;
   color: #fff;
-
+}
+.list-button {
+  display: flex;
+  flex-direction: column;
+  max-width: 100px;
+  border: 1px solid #ccc;
+  background-color: #0431f8;
+  color:#fff;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 h1 {
   margin: 40px;
@@ -173,4 +184,21 @@ h1 {
 .newpost-update:hover {
   cursor: pointer;
   opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    height: auto;
+  }
+  .newpost,
+  .delete-post,
+  .newpost-update{
+    font-size:10px;
+    margin: 5px;
+  }
+  th {
+    margin-top: 5px;
+    font-size: 0.7rem;
+  }
 }
