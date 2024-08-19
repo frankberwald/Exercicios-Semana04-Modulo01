@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Novo Post</title>
+</head>
+<header>
+  <a href="posts.html">Listar</a>
+</header>
+<body>
+  <div class="container">
+    <h1>Create a Post</h1>
+    <form action="" class="form-group" id="postForm">
+      <div class="form-item">
+        <label for="postTitle" name="Title">Titulo:</label>
+        <input type="text" for="Title" name="Title" id="postTitle" placeholder="Insira o Título">
+      </div>
+
+      <div class="form-item">
+        <label for="postAuthor" name="Author">Autor:</label>
+        <input type="text" for="Author" name="Title" id="postAuthor" placeholder="Insira seu Nome">
+      </div>
+
+      <div class="form-item">
+        <label for="petCategory">Categoria</label>
+        <select name="category" id="petCategory">
+          <option value="">Escolha uma Categoria</option>
+          <option value="Alimentação">Alimentação</option>
+          <option value="Cuidados">Cuidados</option>
+          <option value="Treinamento">Treinamento</option>
+          <option value="Saúde">Saúde</option>
+          <option value="Passeios">Passeios</option>
+        </select>
+      </div>
+
+      <div class="form-item">
+        <label for="postDate" name="Title">Data de Criação:</label>
+        <input type="date" for="dataCriacao" name="dataCriacao" id="postDate" placeholder="dd/mm/aaaa">
+      </div>
+
+      <button class="btn">Registrar</button>
+
+    </form>
+  </div>
+  <script src="src/novoPost.js"></script>
+</body>
+</html>
